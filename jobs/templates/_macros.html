@@ -8,9 +8,9 @@
   <div class="card-content">
     <div class="content">
         <p>
-            <a href="{{ job['employer_name'] }}"></a>
-            <a href="{{ job['salary'] }}"></a>
-            <a href="{{ job['description'] }}"></a>
+            <a href="{{ url_for('employer', employer_id=job['employer_id']) }}">{{ job['employer_name'] }}</a>
+            <a>{{ job['salary'] }}</a>
+            <a>{{ job['description'] }}</a>
         </p>
     </div>
   </div>
